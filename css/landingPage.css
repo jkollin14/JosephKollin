@@ -1,0 +1,49 @@
+@font-face { font-family: FjallaOne; src: url('../fonts/FjallaOne-Regular.ttf'); }
+
+#navTitle {
+  font-family: Lato;
+  color: white;
+}
+
+#landingSection {
+  margin-top: 0px;
+  background: black;
+  height: 100vh;
+}
+
+#aboutMeHeadshot{
+  position: absolute;
+  left: 40vw;
+  top: 25vh;
+}
+
+#aboutMeImageSpacer {
+  position: absolute;
+  top: 15vh;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: none;
+}
+
+#aboutMeImageSpacer h1 {
+  font-size: 5rem;
+}
+
+#arrowDown {
+  text-align: center;
+  font-size: 3em;
+}
+
+#learnAboutMe {
+  margin: 0 auto;
+  width: 75%;
+}
+
+#aboutMeMenuButton,
+ #resumeMenuButton,
+  #contactMenuButton,
+   #experienceMenuButton {
+     font-family:Lato;
+     font-weight: bold;
+   }

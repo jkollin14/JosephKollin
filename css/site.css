@@ -1,0 +1,5 @@
+@font-face { font-family: FjallaOne; src: url('../fonts/FjallaOne-Regular.ttf'); }
+
+.fontStyle {
+  font-family: FjallaOne, sans-serif;
+}

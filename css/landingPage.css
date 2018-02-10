@@ -1,7 +1,33 @@
-@font-face { font-family: FjallaOne; src: url('../fonts/FjallaOne-Regular.ttf'); }
+html {
+  --gray-div-color: #EEEEEE;
+  --gray-footer-color: #DFDFDF;
+  --gray-footer-text-color: #828282;
+}
+
+
+@font-face {
+   font-family: FjallaOne;
+   src: url('../fonts/FjallaOne-Regular.ttf');
+ }
+
+@font-face {
+    font-family: BudhayantiScript;
+    src: url('../fonts/BudhayantiScript.ttf');
+}
+
+@font-face {
+    font-family: Antro;
+    src: url('../fonts/Antro_Vectra.otf');
+}
 
 #navTitle {
-  font-family: Lato;
+  font-family: BudhayantiScript !important;
+  color: white;
+}
+
+#navTitle h1{
+  padding-top: 7px;
+  font-family: Antro !important;
   color: white;
 }
 

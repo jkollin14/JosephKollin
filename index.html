@@ -12,6 +12,8 @@
 	<link rel="stylesheet" type="text/css" href="css/landingPage.css">
 	<link rel="stylesheet" type="text/css" href="css/aboutMe.css">
 	<link rel="stylesheet" type="text/css" href="css/video.css">
+	<link rel="stylesheet" type="text/css" href="css/contactMe.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
 
 	<!-- Scripts -->
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="	crossorigin="anonymous"></script>
@@ -91,32 +93,31 @@ function scaleBannerVideoSize(element){
 	<div class="ui inverted top fixed menu">
   <div class="item">
     <div id="navTitle" class="ui icon input">
-      <h1 style="font-family: Calibri;">Joseph Kollin</h1>
+      <h1>Joseph Kollin</h1>
     </div>
   </div>
 	<div class="right menu">
     <a href="#aboutMe" class="item" id="aboutMeMenuButton">About Me</a>
-    <a class="item" id="resumeMenuButton">Resume</a>
 		<a class="item" id="contactMenuButton">Contact</a>
 		<a class="item"id="experienceMenuButton">Experience</a>
+		<a class="item" id="resumeMenuButton" href="/" download="Joseph-Kollin-Resume.pdf"><i class="download icon"></i> Resume</a>
   </div>
 </div>
 
 <div id="landingSection" class="ui fluid container">
-    <div class="video-container">
-        <video autoplay loop class="fillWidth">
-            <source src="videos/MP4/Busy-People.mp4" type="video/mp4" />
-            <source src="videos/WEBM/Busy-People.webm" type="video/webm" />
-        </video>
-    </div>
+
 		<div id="aboutMeImageSpacer">
 			<img class="ui medium top aligned circular image" src="images/professionalHeadshot.jpg">
 			<h1>Web Designer & Developer</h1>
 			<h2>I am an avid computer programmer, guitar plyert, and alternative speller...</h2>
-			<button style="margin-top: 7vh; margin-bottom: 3vh;" class="ui inverted labeled icon button">
-  			<i class="download icon"></i>
-  			Download Resume
-			</button>
+			<a href="/" download="Joseph-Kollin-Resume.pdf">
+				<button style="margin-top: 7vh; margin-bottom: 3vh;" class="ui inverted labeled icon button">
+	  			<i class="download icon"></i>
+	  			Download Resume
+				</button>
+			</a>
+
+
 			<div id="learnAboutMe">
 			<h4 class="ui horizontal inverted divider">
     		Learn About Me
@@ -128,7 +129,7 @@ function scaleBannerVideoSize(element){
 		</div>
 </div>
 
-<div id="aboutMeSection" class="ui fluid container">
+<div id="aboutMeSection" class="ui container">
 	<div id="sectionHeaderDiv" class="ui grid">
   	<div class="five wide column"></div>
   	<div class="six wide column">
@@ -137,10 +138,10 @@ function scaleBannerVideoSize(element){
   	<div class="five wide column"></div>
 	</div>
 	<div class="ui grid">
-  	<div style="background-color: red;" class="eight wide column">
-
+  	<div id="aboutMeImage" class="eight wide column">
+			<img src="" alt="" />
 		</div>
-  	<div style="background-color: blue;" class="eight wide column">
+  	<div style="" class="eight wide column">
 			<h2>
 			My name is Joe Kollin and I am a senior computer science major at the University of Cincinnati.
 			<br /><br />I will be graduating this upcoming May (May 2018) and will be going on to work for
@@ -155,8 +156,31 @@ function scaleBannerVideoSize(element){
 
 </div>
 
-<div id="contactMeSection" class="ui fluid container">
+<div id="contactMeSection">
+	<div id="sectionHeaderDiv" class="ui grid">
+  	<div class="two wide column"></div>
+  	<div class="twelve wide column">
+		</div>
+		</div>
+  	<div class="two wide column"></div>
+	</div>
+</div>
 
+<div id="footerArrow">
+</div>
+
+<div id="footerSection">
+	<div class="ui grid">
+  	<div class="two wide column"></div>
+  	<div class="twelve wide column">
+			<p style="margin-top: 20px; margin-bottom: 20px;">
+				© 2018 Joseph Kollin. All rights reserved.<br />built by
+				<i class="icon world"></i>Joseph Kollin
+			</p>
+		</div>
+		</div>
+  	<div class="two wide column"></div>
+	</div>
 </div>
 
 

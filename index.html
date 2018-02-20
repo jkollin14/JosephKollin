@@ -22,69 +22,6 @@
 	<script src="semantic/semantic.min.js"></script>
 
 	<script type="text/javascript">
-	//jQuery is required to run this code
-$( document ).ready(function() {
-
-	scaleVideoContainer();
-
-	initBannerVideoSize('.video-container .poster img');
-	initBannerVideoSize('.video-container .filter');
-	initBannerVideoSize('.video-container video');
-
-	$(window).on('resize', function() {
-			scaleVideoContainer();
-			scaleBannerVideoSize('.video-container .poster img');
-			scaleBannerVideoSize('.video-container .filter');
-			scaleBannerVideoSize('.video-container video');
-	});
-
-});
-
-function scaleVideoContainer() {
-
-	var height = $(window).height() + 5;
-	var unitHeight = parseInt(height) + 'px';
-	$('.homepage-hero-module').css('height',unitHeight);
-
-}
-
-function initBannerVideoSize(element){
-
-	$(element).each(function(){
-			$(this).data('height', $(this).height());
-			$(this).data('width', $(this).width());
-	});
-
-	scaleBannerVideoSize(element);
-
-}
-
-function scaleBannerVideoSize(element){
-
-	var windowWidth = $(window).width(),
-	windowHeight = $(window).height() + 5,
-	videoWidth,
-	videoHeight;
-
-	// console.log(windowHeight);
-
-	$(element).each(function(){
-			var videoAspectRatio = $(this).data('height')/$(this).data('width');
-
-			$(this).width(windowWidth);
-
-			if(windowWidth < 1000){
-					videoHeight = windowHeight;
-					videoWidth = videoHeight / videoAspectRatio;
-					$(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
-
-					$(this).width(videoWidth).height(videoHeight);
-			}
-
-			$('.homepage-hero-module .video-container video').addClass('fadeIn animated');
-
-	});
-}
 	</script>
 
 </head>
@@ -129,7 +66,7 @@ function scaleBannerVideoSize(element){
 </div>
 
 <div id="aboutMeSection" class="ui container">
-	<div id="sectionHeaderDiv" class="ui grid">
+	<div id="aboutMeSectionHeaderDiv" class="ui grid">
   	<div class="five wide column"></div>
   	<div class="six wide column">
 			<h1 class="sectionHeaderText">About Me</h1>
@@ -143,9 +80,12 @@ function scaleBannerVideoSize(element){
   	<div style="" class="eight wide column">
 			<h2>
 			My name is Joe Kollin and I am a senior computer science major at the University of Cincinnati.
-			<br /><br />I will be graduating this upcoming May (May 2018) and will be going on to work for
-			GE Aviation as a digital technologist. In addition, I have been running a company, Syntonic LLC,
-		  with two of my college friends for the past three years.
+			<br /><br />I will be graduating this upcoming April(2018) and will be going on to work for
+			GE Aviation as a digital technologist.
+			<br /><br />When I am not in school or working for GE, I run my own company, Syntonic LLC. Syntonic
+		  is a technology consulting company which I have been running with two of my friends
+			for the past two years. Working for Syntonic has provided me an abundance of technical experience
+			and a deep understanding of design principles.
 		</h2>
 		</div>
 	</div>
@@ -159,6 +99,12 @@ function scaleBannerVideoSize(element){
 	<div id="sectionHeaderDiv" class="ui grid">
   	<div class="two wide column"></div>
   	<div class="twelve wide column">
+			<form action="https://formspree.io/jkollin14@gmail.com"
+      method="POST">
+    		<input type="text" name="name">
+    		<input type="email" name="_replyto">
+    		<input type="submit" value="Send">
+			</form>
 		</div>
 		</div>
   	<div class="two wide column"></div>

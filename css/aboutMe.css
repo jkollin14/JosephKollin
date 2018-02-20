@@ -1,11 +1,12 @@
 #aboutMeSection {
   margin-top: 0px;
+  margin-bottom: 10rem;
   background: white;
   height: 70vh;
 }
 
-#sectionHeaderDiv {
-  margin-top: 5rem;
+#aboutMeSectionHeaderDiv {
+  margin-top: 2rem;
 }
 
 .sectionHeaderText {

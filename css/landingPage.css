@@ -45,7 +45,7 @@ html {
 
 #aboutMeImageSpacer {
   position: absolute;
-  top: 15vh;
+  bottom: 0vh;
   width: 100%;
   text-align: center;
   color: white;

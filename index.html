@@ -10,6 +10,8 @@
 	<link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
 	<link rel="stylesheet" type="text/css" href="css/site.css">
 	<link rel="stylesheet" type="text/css" href="css/landingPage.css">
+	<link rel="stylesheet" type="text/css" href="css/activities.css">
+	<link rel="stylesheet" type="text/css" href="css/experience.css">
 	<link rel="stylesheet" type="text/css" href="css/aboutMe.css">
 	<link rel="stylesheet" type="text/css" href="css/video.css">
 	<link rel="stylesheet" type="text/css" href="css/contactMe.css">
@@ -27,7 +29,7 @@
 </head>
 
 <body>
-	<div class="ui inverted top fixed menu">
+	<div id="navMenu" class="ui inverted top fixed menu">
   <div class="item">
     <div id="navTitle" class="ui icon input">
       <h1>Joseph Kollin</h1>
@@ -35,8 +37,9 @@
   </div>
 	<div class="right menu">
     <a href="#aboutMe" class="item" id="aboutMeMenuButton">About Me</a>
-		<a class="item" id="contactMenuButton">Contact</a>
 		<a class="item" id="experienceMenuButton">Experience</a>
+		<a class="item" id="experienceMenuButton">Activities</a>
+		<a class="item" id="contactMenuButton">Contact</a>
 		<a class="item" id="resumeMenuButton" href="Joseph-Kollin-Resume.pdf" download="Joseph-Kollin-Resume.pdf"><i class="download icon"></i> Resume</a>
   </div>
 </div>
@@ -52,8 +55,6 @@
 	  			Download Resume
 				</button>
 			</a>
-
-
 			<div id="learnAboutMe">
 			<h4 class="ui horizontal inverted divider">
     		Learn About Me
@@ -67,11 +68,11 @@
 
 <div id="aboutMeSection" class="ui container">
 	<div id="aboutMeSectionHeaderDiv" class="ui grid">
-  	<div class="five wide column"></div>
-  	<div class="six wide column">
-			<h1 class="sectionHeaderText">About Me</h1>
+		<div class="sixteen wide column">
+			<div class="sectionHeaderTextDiv">
+				<h1 class="sectionHeaderText">About Me</h1>
+			</div>
 		</div>
-  	<div class="five wide column"></div>
 	</div>
 	<div class="ui grid">
   	<div id="aboutMeImage" class="eight wide column">
@@ -92,22 +93,104 @@
 </div>
 
 <div id="experienceSection" class="ui fluid container">
+	<div id="experienceSectionHeaderDiv" class="ui grid">
+		<div class="sixteen wide column">
+			<div class="sectionHeaderTextDiv">
+				<h1 class="sectionHeaderText">Experience</h1>
+			</div>
+		</div>
+	</div>
+	<div class="ui grid">
+		<div class="two wide column">
+		</div>
+		<div class="four wide column">
+			<div class="experienceInstance">
+				<div class="experienceImage">
+					<img class="ui medium top aligned rounded image" src="images/professionalHeadshot.jpg">
+				</div>
+				<div class="experienceText">
+					<h4>Description  Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description </h4>
+				</div>
+			</div>
+		</div>
+		<div class="four wide column">
+			<div class="experienceInstance">
+				<div class="experienceImage">
+					<img class="ui medium top aligned rounded image" src="images/professionalHeadshot.jpg">
+				</div>
+				<div class="experienceText">
+					<h4>Description  Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description </h4>
+				</div>
+			</div>
+		</div>
+		<div class="four wide column">
+			<div class="experienceInstance">
+				<div class="experienceImage">
+					<img class="ui medium top aligned rounded image" src="images/professionalHeadshot.jpg">
+				</div>
+				<div class="experienceText">
+					<h4>Description  Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description </h4>
+				</div>
+			</div>
+		</div>
+		<div class="two wide column">
+		</div>
+	</div>
+</div>
 
+<div id="activitiesSection" class="ui fluid container">
+	<div id="activitiesSectionHeaderDiv" class="ui grid">
+		<div class="sixteen wide column">
+			<div class="sectionHeaderTextDiv">
+				<h1 class="sectionHeaderText">Activities</h1>
+			</div>
+		</div>
+	</div>
+	<div class="ui celled grid">
+        <div class="row">
+          <div class="two wide column"></div>
+          <div style="background: green; height: 300px;" class="four wide column"></div>
+          <div style="background: red;height: 300px;" class="four wide column"></div>
+          <div style="background: orange;height: 300px;" class="four wide column"></div>
+					<div class="two wide column"></div>
+        </div>
+				<div class="row">
+					<div class="two wide column"></div>
+          <div style="background: green; height: 300px;" class="four wide column"></div>
+          <div style="background: red;height: 300px;" class="four wide column"></div>
+          <div style="background: orange;height: 300px;" class="four wide column"></div>
+					<div class="two wide column"></div>
+        </div>
+      </div>
 </div>
 
 <div id="contactMeSection">
-	<div id="sectionHeaderDiv" class="ui grid">
-  	<div class="two wide column"></div>
-  	<div class="twelve wide column">
-			<form action="https://formspree.io/jkollin14@gmail.com"
+	<div id="contactSectionHeaderDiv" class="ui grid">
+  	<div class="sixteen wide column">
+			<div class="sectionHeaderTextDiv">
+				<h1 class="sectionHeaderText">Contact Me</h1>
+			</div>
+		</div>
+	</div>
+	<div id="contactHeaderDiv" class="ui grid">
+  	<div class="three wide column"></div>
+  	<div class="ten wide column">
+			<form id="contactMeForm" action="https://formspree.io/jkollin14@gmail.com"
       method="POST">
-    		<input type="text" name="name">
-    		<input type="email" name="_replyto">
-    		<input type="submit" value="Send">
+				<input type="hidden" name="_next" value="//jkollin14.github.io/JosephKollin/" />
+				<label for="name">Name:</label>
+				<input required id="contactMeFormName" type="text" name="name" placeholder="Enter Name">
+				<label for="name">Email:</label>
+    		<input required id="contactMeFormEmail" type="email" placeholder="Enter Email" name="_replyto">
+				<label for="name">Message Subject:</label>
+				<input required id="contactMeFormSubject" type="text" placeholder="Enter Subject" name="subject">
+				<label for="name">Message:</label>
+				<textarea rows=4 id="contactMeFormMessage"></textarea>
+				<input id="contactMeFormSubmit" type="submit" value="Send">
 			</form>
 		</div>
 		</div>
-  	<div class="two wide column"></div>
+  	<div class="three wide column"></div>
 	</div>
 </div>
 
@@ -135,15 +218,17 @@
 <!-- Scroll from menu -->
 <script>
 $("#aboutMeMenuButton").click(function() {
+		var offsetValue = $("#aboutMeSection").offset().top - $("#navMenu").height();
     $('html,body').animate({
-        scrollTop: $("#aboutMeSection").offset().top},
+        scrollTop: offsetValue},
         'slow');
 });
 
 $("#arrowDown").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#aboutMeSection").offset().top},
-        'slow');
+	var offsetValue = $("#aboutMeSection").offset().top - $("#navMenu").height();
+	$('html,body').animate({
+			scrollTop: offsetValue},
+			'slow');
 });
 </script>
 

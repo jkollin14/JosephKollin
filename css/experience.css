@@ -1,0 +1,13 @@
+#experienceSection {
+  margin-top: 0px;
+  height: 95vh;
+  background-color: var(--gray-div-color);
+}
+
+#experienceSectionHeaderDiv {
+  padding-top: 2.5rem;
+}
+
+.experienceInstance {
+  background-color: red;
+}

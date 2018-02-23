@@ -82,10 +82,10 @@ html {
 
 #contactMeFormSubmit{
   width: 100%;
-  border: 5px solid #FF4500;
+  border: 5px solid red;
   border-radius: 15px;
   padding: 15px;
-  background-color: #FF4500;
+  background-color: red;
   color: white;
   font-size: 2.5rem;
   font-weight: bolder;
@@ -93,6 +93,6 @@ html {
 
 #contactMeFormSubmit:hover{
   background-color: white;
-  color: #FF4500;
+  color: red;
   cursor: pointer;
 }

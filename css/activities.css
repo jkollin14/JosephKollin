@@ -1,12 +1,25 @@
 #activitiesSection {
-  margin-top: 0px;
-  margin-bottom: 10rem;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
   background: white;
   height: auto;
   overflow: hidden;
-  padding-bottom: 0px;
+  min-height: 100vh;
 }
 
 #activitiesSectionHeaderDiv {
   padding-top: 2.5rem;
+}
+
+#arrowUp {
+  text-align: center;
+  font-size: 3em;
+}
+
+#clickMe {
+  padding-top: 3rem;
+  margin: 0 auto;
+  width: 75%;
+  color: black;
 }

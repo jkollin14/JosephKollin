@@ -5,7 +5,9 @@ html {
 #contactMeSection {
   background-color: var(--gray-div-color);
   margin-bottom: -50px;
-  height: 85vh;
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 70px;
 }
 
 #contactSectionHeaderDiv {

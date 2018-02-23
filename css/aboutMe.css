@@ -1,8 +1,9 @@
 #aboutMeSection {
   margin-top: 0px;
-  margin-bottom: 10rem;
+  margin-bottom: 4rem;
   background: white;
-  height: 70vh;
+  height: auto;
+  padding-bottom: 0px;
 }
 
 #aboutMeSectionHeaderDiv {

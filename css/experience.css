@@ -1,6 +1,8 @@
 #experienceSection {
   margin-top: 0px;
-  height: 95vh;
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 100px;
   background-color: var(--gray-div-color);
 }
 
@@ -9,5 +11,14 @@
 }
 
 .experienceInstance {
-  background-color: red;
+  background-color: none;
+}
+
+.experienceSectionHeaderText {
+  text-align: center;
+  color: black;
+  border: 4px solid;
+  border-color: black;
+  border-radius: 10px;
+  font-size: 20px;
 }

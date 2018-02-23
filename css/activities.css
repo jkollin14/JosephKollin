@@ -2,7 +2,9 @@
   margin-top: 0px;
   margin-bottom: 10rem;
   background: white;
-  height: 70vh;
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 0px;
 }
 
 #activitiesSectionHeaderDiv {

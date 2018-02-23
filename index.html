@@ -36,9 +36,9 @@
     </div>
   </div>
 	<div class="right menu">
-    <a href="#aboutMe" class="item" id="aboutMeMenuButton">About Me</a>
+    <a class="item" id="aboutMeMenuButton">About Me</a>
 		<a class="item" id="experienceMenuButton">Experience</a>
-		<a class="item" id="experienceMenuButton">Activities</a>
+		<a class="item" id="activitiesMenuButton">Activities</a>
 		<a class="item" id="contactMenuButton">Contact</a>
 		<a class="item" id="resumeMenuButton" href="Joseph-Kollin-Resume.pdf" download="Joseph-Kollin-Resume.pdf"><i class="download icon"></i> Resume</a>
   </div>
@@ -106,30 +106,43 @@
 		<div class="four wide column">
 			<div class="experienceInstance">
 				<div class="experienceImage">
-					<img class="ui medium top aligned rounded image" src="images/professionalHeadshot.jpg">
+					<img class="ui centered medium circular image" src="http://via.placeholder.com/350x350">
 				</div>
+				<h3 class="experienceSectionHeaderText">GE Business Analyst</h3>
 				<div class="experienceText">
-					<h4>Description  Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description </h4>
+					<h4>During my second year of college, I worked for GE Aviation as a business
+					analyst. The purpose of my rotation was to provide insight into the amount of money that was spent
+					maintaining and hosting applications in their portfolio. <br /><br /> My rotation introuduced me to scripting,
+					application infrastructure, and working in a professional setting.</h4>
 				</div>
 			</div>
 		</div>
 		<div class="four wide column">
 			<div class="experienceInstance">
 				<div class="experienceImage">
-					<img class="ui medium top aligned rounded image" src="images/professionalHeadshot.jpg">
+					<img class="ui centered medium circular image" src="http://via.placeholder.com/350x350">
 				</div>
+				<h3 class="experienceSectionHeaderText">GE Infrastructure Developer</h3>
 				<div class="experienceText">
-					<h4>Description  Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description </h4>
+					<h4>During my third year of college, I worked for GE Aviation as an infrastructure developer. Over the course of the four month
+					rotation, I successfully migrated three applications to the cloud, built a POC, and helped redesign GE Aviation's CICD
+					pipeline. <br /><br /> This rotation introduced me to several concepts in software development including development pipelines, git workflow,
+					and client frameworks.</h4>
 				</div>
 			</div>
 		</div>
 		<div class="four wide column">
 			<div class="experienceInstance">
 				<div class="experienceImage">
-					<img class="ui medium top aligned rounded image" src="images/professionalHeadshot.jpg">
+					<img class="ui centered medium circular image" src="http://via.placeholder.com/350x350">
 				</div>
+				<h3 class="experienceSectionHeaderText">GE Software Developer</h3>
 				<div class="experienceText">
-					<h4>Description  Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description </h4>
+					<h4>During my fourth year of college, I worked for GE Aviation as a software developer.
+						During this rotation, I successfully designed and implemented an open office seating application. I helped design and create
+						a RESTful API in Golang, integrated the API with Amazon's DynamoDB, and developed a Polymer client and server. <br /><br /> I presented my
+				  	application to the CIO of GE Aviation at the end of my internship and it was optioned to be a cross-business application
+						(All GE business would use the application)</h4>
 				</div>
 			</div>
 		</div>
@@ -146,15 +159,15 @@
 			</div>
 		</div>
 	</div>
-	<div class="ui celled grid">
-        <div class="row">
-          <div class="two wide column"></div>
-          <div style="background: green; height: 300px;" class="four wide column"></div>
-          <div style="background: red;height: 300px;" class="four wide column"></div>
-          <div style="background: orange;height: 300px;" class="four wide column"></div>
+	<div style="box-shadow: 0px;" class="ui grid">
+        <div style="margin-bottom: 0; padding-bottom: 0;" class="row">
+          <div style="box-shadow: 0px;" class="two wide column"></div>
+          <div style="box-shadow: 0px; background: green; height: 300px;" class="four wide column"></div>
+          <div style="box-shadow: 0px; background: red; height: 300px;" class="four wide column"></div>
+          <div style="box-shadow: 0px; background: orange;height: 300px;" class="four wide column"></div>
 					<div class="two wide column"></div>
         </div>
-				<div class="row">
+				<div style="margin-top: 0; padding-top: 0;" class="row">
 					<div class="two wide column"></div>
           <div style="background: green; height: 300px;" class="four wide column"></div>
           <div style="background: red;height: 300px;" class="four wide column"></div>
@@ -219,6 +232,27 @@
 <script>
 $("#aboutMeMenuButton").click(function() {
 		var offsetValue = $("#aboutMeSection").offset().top - $("#navMenu").height();
+    $('html,body').animate({
+        scrollTop: offsetValue},
+        'slow');
+});
+
+$("#experienceMenuButton").click(function() {
+		var offsetValue = $("#experienceSection").offset().top - $("#navMenu").height();
+    $('html,body').animate({
+        scrollTop: offsetValue},
+        'slow');
+});
+
+$("#activitiesMenuButton").click(function() {
+		var offsetValue = $("#activitiesSection").offset().top - $("#navMenu").height();
+    $('html,body').animate({
+        scrollTop: offsetValue},
+        'slow');
+});
+
+$("#contactMenuButton").click(function() {
+		var offsetValue = $("#contactMeSection").offset().top - $("#navMenu").height();
     $('html,body').animate({
         scrollTop: offsetValue},
         'slow');

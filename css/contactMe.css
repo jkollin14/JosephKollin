@@ -3,7 +3,7 @@ html {
 }
 
 #contactMeSection {
-  background-color: var(--gray-div-color);
+  background-color: var(--gray-footer-color);
   margin-bottom: -50px;
   height: auto;
   overflow: hidden;
